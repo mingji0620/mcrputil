@@ -17,6 +17,8 @@ use wildmatch::WildMatch;
 #[derive(Parser)]
 #[clap(about)]
 enum McrpCommand {
+    /// 启动图形用户界面
+    Gui,
     /// Encrypts the directory with a given or auto-generated key
     Encrypt {
         /// Input directory
@@ -41,6 +43,8 @@ enum McrpCommand {
         key: String,
     },
 }
+
+mod gui;
 
 fn main() {
     match McrpCommand::parse() {
@@ -81,6 +85,9 @@ fn main() {
                 );
             }
             decrypt(input_path, output_path, &key_bytes);
+        }
+        McrpCommand::Gui => {
+            gui::run().expect("GUI运行失败");
         }
     }
 }

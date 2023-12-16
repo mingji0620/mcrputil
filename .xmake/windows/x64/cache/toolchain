@@ -1,0 +1,129 @@
+{
+    rust_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    gfortran_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    cuda_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    msvc_arch_x64_plat_windows = {
+        vs_sdkver = "10.0.22621.0",
+        __checked = "2022",
+        __global = true,
+        vs_toolset = "14.43.34808",
+        arch = "x64",
+        vcvars = {
+            VSCMD_VER = "17.13.1",
+            UCRTVersion = "10.0.22621.0",
+            VSInstallDir = [[D:\VS\a\]],
+            WindowsLibPath = [[D:\Windows Kits\10\UnionMetadata\10.0.22621.0;D:\Windows Kits\10\References\10.0.22621.0]],
+            UniversalCRTSdkDir = [[D:\Windows Kits\10\]],
+            WindowsSdkVerBinPath = [[D:\Windows Kits\10\bin\10.0.22621.0\]],
+            VS170COMNTOOLS = [[D:\VS\a\Common7\Tools\]],
+            VSCMD_ARG_HOST_ARCH = "x64",
+            VSCMD_ARG_app_plat = "Desktop",
+            WindowsSdkBinPath = [[D:\Windows Kits\10\bin\]],
+            VCToolsVersion = "14.43.34808",
+            WindowsSDKVersion = "10.0.22621.0",
+            VCIDEInstallDir = [[D:\VS\a\Common7\IDE\VC\]],
+            VisualStudioVersion = "17.0",
+            WindowsSdkDir = [[D:\Windows Kits\10\]],
+            VCToolsRedistDir = [[D:\VS\a\VC\Redist\MSVC\14.42.34433\]],
+            LIBPATH = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\ATLMFC\lib\x64;D:\VS\a\VC\Tools\MSVC\14.43.34808\lib\x64;D:\VS\a\VC\Tools\MSVC\14.43.34808\lib\x86\store\references;D:\Windows Kits\10\UnionMetadata\10.0.22621.0;D:\Windows Kits\10\References\10.0.22621.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319]],
+            VSCMD_ARG_TGT_ARCH = "x64",
+            LIB = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\ATLMFC\lib\x64;D:\VS\a\VC\Tools\MSVC\14.43.34808\lib\x64;D:\Windows Kits\10\lib\10.0.22621.0\ucrt\x64;D:\Windows Kits\10\\lib\10.0.22621.0\\um\x64]],
+            VCToolsInstallDir = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\]],
+            INCLUDE = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\include;D:\VS\a\VC\Tools\MSVC\14.43.34808\ATLMFC\include;D:\VS\a\VC\Auxiliary\VS\include;D:\Windows Kits\10\include\10.0.22621.0\ucrt;D:\Windows Kits\10\\include\10.0.22621.0\\um;D:\Windows Kits\10\\include\10.0.22621.0\\shared;D:\Windows Kits\10\\include\10.0.22621.0\\winrt;D:\Windows Kits\10\\include\10.0.22621.0\\cppwinrt]],
+            PATH = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64;D:\VS\a\Common7\IDE\VC\VCPackages;D:\VS\a\Common7\IDE\CommonExtensions\Microsoft\TestWindow;D:\VS\a\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;D:\VS\a\MSBuild\Current\bin\Roslyn;D:\VS\a\Team Tools\DiagnosticsHub\Collector;D:\Windows Kits\10\bin\10.0.22621.0\\x64;D:\Windows Kits\10\bin\\x64;D:\VS\a\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;D:\VS\a\Common7\IDE\;D:\VS\a\Common7\Tools\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Recovery\OEM\Backup\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\铭记\AppData\Local\Microsoft\WindowsApps;C;\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;D:\Microsoft VS Code\bin;C:\Program Files\nodejs\;D:\JavaMc\bedrock-server-1.21.51.02\Lip;D:\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\xmake;C:\Users\铭记\AppData\Local\Microsoft\WindowsApps;C:\Users\铭记\AppData\Roaming\npm;D:\Microsoft VS Code\bin;D:\QQGame\Hall.58319\;C:\Users\铭记\xmake;D:\VS\a\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;D:\VS\a\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja;D:\VS\a\Common7\IDE\VC\Linux\bin\ConnectionManagerExe;D:\VS\a\VC\vcpkg]],
+            DevEnvdir = [[D:\VS\a\Common7\IDE\]],
+            ExtensionSdkDir = [[C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs]],
+            VCInstallDir = [[D:\VS\a\VC\]]
+        },
+        plat = "windows",
+        vcarchs = {
+            "arm",
+            "arm64",
+            "arm64ec",
+            "x64",
+            "x86"
+        },
+        vs = "2022"
+    },
+    tool_target_mcrputil_windows_x64_cxx = {
+        toolname = "cl",
+        toolchain_info = {
+            arch = "x64",
+            plat = "windows",
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows"
+        },
+        program = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]]
+    },
+    tool_target_mcrputil_windows_x64_ar = {
+        toolname = "link",
+        toolchain_info = {
+            arch = "x64",
+            plat = "windows",
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows"
+        },
+        program = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe]]
+    },
+    yasm_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    swift_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    go_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    nim_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = false,
+        __global = true
+    },
+    fpc_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    },
+    tool_target_mcrputil_windows_x64_mrc = {
+        toolname = "rc",
+        toolchain_info = {
+            arch = "x64",
+            plat = "windows",
+            name = "msvc",
+            cachekey = "msvc_arch_x64_plat_windows"
+        },
+        program = [[D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe]]
+    },
+    nasm_arch_x64_plat_windows = {
+        arch = "x64",
+        plat = "windows",
+        __checked = true,
+        __global = true
+    }
+}

@@ -9,6 +9,7 @@ description = "Minecraft Resource Pack Util for encrypting and decrypting resour
 
 [dependencies]
 aes = "0.8"
+iced = { version = "0.12", features = ["tokio"] }
 cfb8 = "0.8"
 clap = { version = "4.4", features = ["derive"] }
 glob = "0.3"

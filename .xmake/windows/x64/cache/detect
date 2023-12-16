@@ -1,0 +1,51 @@
+{
+    find_programver = {
+        ["D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe"] = "10.0.10011.16384",
+        ["D:\\VS\\a\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\cl.exe"] = "19.43.34808"
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolmrc = {
+        ["rc.exe"] = [[D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe]]
+    },
+    ["lib.detect.has_flags"] = {
+        ["windows_x64_D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe_10.0.10011.16384_mrc_mrcflags__-nologo"] = true
+    },
+    ["core.tools.rc.has_flags"] = {
+        ["D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe_10.0.10011.16384"] = {
+            ["-d"] = true,
+            ["-g"] = true,
+            ["-g1"] = true,
+            ["-i"] = true,
+            ["-n"] = true,
+            ["-fo"] = true,
+            ["-y"] = true,
+            ["-u"] = true,
+            ["-w"] = true,
+            ["-v"] = true,
+            ["-gn"] = true,
+            ["-fm"] = true,
+            ["-c"] = true,
+            ["-nologo"] = true,
+            ["-ln"] = true,
+            ["-r"] = true,
+            ["-l"] = true,
+            ["-x"] = true,
+            ["-q"] = true,
+            ["-g2"] = true,
+            ["-sl"] = true
+        }
+    },
+    find_program_rust_arch_x64_plat_windows_checktoolrc = {
+        rustc = false
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
+        ["cl.exe"] = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolar = {
+        ["link.exe"] = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\link.exe]]
+    },
+    find_program = {
+        nim = false,
+        ["D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe"] = [[D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe]],
+        ["cl.exe"] = [[D:\VS\a\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64\cl.exe]]
+    }
+}
