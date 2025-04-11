@@ -7,17 +7,31 @@ jobs:
   create_release:
     runs-on: ubuntu-latest
     steps:
-      - id: create_release
-        uses: actions/create-release@v1
+      - name: Check for existing release
+        id: check-release
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: releases } = await github.rest.repos.listReleases({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              per_page: 100
+            });
+            return releases.some(r => r.tag_name === process.env.GITHUB_REF_NAME);
+          result-encoding: string
+
+      - name: Create Release
+        if: steps.check-release.outputs.result != 'true'
+        id: create_release
+        uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
-    outputs:
-      upload_url: ${{ steps.create_release.outputs.upload_url }}
+          skip_if_duplicate: true
   build_release:
     needs: [ create_release ]
     strategy:
