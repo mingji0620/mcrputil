@@ -25,8 +25,16 @@ jobs:
         include:
           - os: ubuntu-latest
             artifact_name: mcrputil
+            target: x86_64-unknown-linux-gnu
           - os: windows-latest
             artifact_name: mcrputil.exe
+            target: x86_64-pc-windows-msvc
+          - os: macos-latest
+            artifact_name: mcrputil
+            target: x86_64-apple-darwin
+          - os: ubuntu-20.04
+            artifact_name: mcrputil
+            target: x86_64-unknown-linux-musl
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -37,17 +45,16 @@ jobs:
         continue-on-error: false
         with:
           path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ~/.cargo/git/db/
-            target/
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+            **/target
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: ${{ runner.os }}-cargo-
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --release
+          args: --release --target ${{ matrix.target }}
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
